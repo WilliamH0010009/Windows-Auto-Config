@@ -171,10 +171,11 @@ The expected behaviour of the edited procedure is the following:
   * Github Desktop
   * Zoom
   * Android Debug Bridge (ADB)
+  * Spotify
   * Discord
 * Suggests to manually install:
   * Citra
   * MTG Arena
   * Microsoft Office
 * Re-enable sleep while on AC
-* Prompt to restart the device 
+* Prompt to restart the device

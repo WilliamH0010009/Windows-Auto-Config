@@ -108,6 +108,7 @@ $Apps = @(
     "github-desktop",
     "zoom",
     "adb",
+    "spotify",
     "discord.install")
 
 foreach ($app in $Apps) {
