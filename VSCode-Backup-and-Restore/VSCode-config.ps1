@@ -38,7 +38,7 @@ else{
 $howMany = (Get-Content $backupAdress |Measure-Object -Line).lines #conta le righe
 
 for($i = 0; $i -lt $howMany; $i++){
-    code --instal-extension (Get-Content $backupAdress)[$i]
+    code --install-extension (Get-Content $backupAdress)[$i]
 }
 
 #prompt 
