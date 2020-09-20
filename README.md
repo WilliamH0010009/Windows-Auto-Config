@@ -1,5 +1,15 @@
 # Windows-Auto-Config
- Automatic custom configuration of Windows 10 installation
+ Automatic custom configuration of Windows 10 installation, Atom and VSCode
+
+## Content
+The repository contains some files which are not listed here to make this piece more futureproof. The main tools are
+
+* **Auto-Conf**: it automatically configures the system as described later
+* **Atom-Config**: this is a stand alone Atom configurator
+* **VSCode-config**: this is a stand alone VSCode configurator
+* **Auto-Conf-and-VSCode**: which should be the to go script out of the box. It's a tasteful copypasta of some previously listed scripts.
+* **Backup-Extensions**: A script that is a single command in a tranchcoat: it produces a list of currently installed VSCode extensions
+
 
 ## Tools and instructions
 
@@ -143,7 +153,7 @@ Restart-Computer
 </p>
 </details>
 
-###What does the automated procedure do
+### What does the automated Windows configuration do
 
 The expected behaviour of the edited procedure is the following:
 
@@ -179,3 +189,13 @@ The expected behaviour of the edited procedure is the following:
   * Microsoft Office
 * Re-enable sleep while on AC
 * Prompt to restart the device
+
+### What does the Rest do?
+
+The VSCode and Atom stand alone configurators just install some packages to work with C/C++, Python (only VSCode as 20/09/20) and LaTex, also cloning a DnD 5e template in the MiKTeX source directories. If you look at the code you'll surely find a list of the packages.
+
+As for the other items they should be pretty self explainatory or I forgot to put them here, one of the two.
+
+### Is There something left to do?
+
+The VSCode backup tool doesn't care for anything but packages at the moment. It's not a problem for me at the moment, but ideally it should allow to backup and quickly set up themes, keybinds and snippets too.
