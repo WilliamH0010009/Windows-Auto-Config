@@ -37,7 +37,8 @@ $uwpRubbishApps = @(
     "Microsoft.BingNews",
     "Microsoft.MicrosoftSolitaireCollection",
     "Fitbit.FitbitCoach",
-    "4DF9E0F8.Netflix")
+    "4DF9E0F8.Netflix",
+    "SpotifyAB.SpotifyMusic")
 
 #Removed items:
 #   "Microsoft.Messaging",
@@ -109,7 +110,8 @@ $Apps = @(
     "zoom",
     "adb",
     "spotify",
-    "discord.install")
+    "discord.install",
+    "strawberryperl")
 
 foreach ($app in $Apps) {
     choco install $app -y
