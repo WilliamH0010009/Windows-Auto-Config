@@ -13,8 +13,8 @@ git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\MiKTeX\
 #----------------------------------------------------------------------------------------------------------------------------------------------------------
 #Voglio recuperare il backup da github --Dove lo salvo? idealmente nella directory dove poi andrei a sincronizzare con git per avere
 #la funzione che ricostruisce la lista di estensioni
-
-$backupAdress = 
+git clone https://github.com/gnowwho/Windows-Auto-Config C:\Github\Windows-Auto-Config
+$backupAdress = "C:\Github\Windows-Auto-Config\VSCode-Backup-and-Restore\extensions.txt"
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------
 #verifichiamo per sicurezza che "code" sia in path
