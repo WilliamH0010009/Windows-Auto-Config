@@ -4,7 +4,7 @@ function Check-Command($cmdname){
     return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
 }
 
-Write-Host "I'm downloading the DnD Template for LaTeX from github"
+Write-Host "I'm downloading the DnD Template for LaTeX from github" -ForegroundColor Green
 git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\TEXMF\tex\latex\dnd
 
 Write-Host "Let's make sure MiKTeX is in Path as it should" -ForegroundColor Green
@@ -21,8 +21,13 @@ else{
   Write-Host "Should be OK now"
 }
 
+Write-Host "I'm updating MiKTeX because it will bother us if it never was" -ForegroundColor Green
+
 #We update MiKTeX so that it doesn't bother us
 initexmf --admin --update-fndb
 
+Write-Host "Registering C:\ProgramData\TEXMF as a recognized Directory for MiKTeX" -ForegroundColor Green
 #we register the local TEXMF directory so we can access custom templates
 initexmf --admin --register-root="C:\ProgramData\TEXMF"
+
+Read-Host -Prompt "Setup is done. You should be able to properly compose DnD books with MiKTeX. [Press a key]"

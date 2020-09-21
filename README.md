@@ -4,12 +4,13 @@
 ## Content
 The repository contains some files which are not listed here to make this piece more futureproof. The main tools are
 
-* **Auto-Conf**: it automatically configures the system as described later
+* **Windows-Auto-Conf**: it automatically configures the system as described later
 * **Atom-Config**: this is a stand alone Atom configurator
 * **VSCode-config**: this is a stand alone VSCode configurator
-* **Auto-Conf-and-VSCode**: which should be the to go script out of the box. It's a tasteful copypasta of some previously listed scripts.
+* **Windows-VSCode**: which should be the to go script out of the box. It's a tasteful copypasta of some previously listed scripts.
 * **Backup-Extensions**: A script that is a single command in a tranchcoat: it produces a list of currently installed VSCode extensions
-
+* **MiKTeX_Setup_withDND**: updates MiKTeX, configures TEXMF directory and downloads the [D&D template](https://github.com/rpgtex/DND-5e-LaTeX-Template) in it. Not necessairily in this order.
+* **Windows-VSCode-MiKTeX**: Annoter copypasta of previous script, all in one. You figure it out which ones.
 
 ## Tools and instructions
 
@@ -20,7 +21,7 @@ For this automated procedure were consulted the following links
 
 [Github](https://github.com/EdiWang/EnvSetup/), which has been forked on the personal packages
 
-<details><summary>Original code for PowerShell</summary>
+<details><summary>Original code for PowerShell in case they changed it</summary>
 <p>
 
 ```powershell
@@ -192,10 +193,11 @@ The expected behaviour of the edited procedure is the following:
 
 ### What does the Rest do?
 
-The VSCode and Atom stand alone configurators just install some packages to work with C/C++, Python (only VSCode as 20/09/20) and LaTex, also cloning a DnD 5e template in the MiKTeX source directories. If you look at the code you'll surely find a list of the packages.
+The VSCode and Atom stand alone configurators just install some packages to work with C/C++, Python (only VSCode as 20/09/20) and LaTex, if you look at the code you'll surely find a list of the packages.
+The MiKTeX configurator clones a DnD 5e template in a dedicated TEXMF directory and adds it to MiKTeX. 
 
 As for the other items they should be pretty self explainatory or I forgot to put them here, one of the two.
 
 ### Is There something left to do?
 
-The VSCode backup tool doesn't care for anything but packages at the moment. It's not a problem for me at the moment, but ideally it should allow to backup and quickly set up themes, keybinds and snippets too.
+The VSCode backup tool doesn't care for anything but packages at the moment. It's not a problem for me right now, but ideally it should allow to backup and quickly set up themes, keybinds and snippets too. Actually this whole section of the script is probably useless given the native github syncronization of VSCode. 
