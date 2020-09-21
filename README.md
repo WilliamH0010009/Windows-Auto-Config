@@ -201,3 +201,5 @@ As for the other items they should be pretty self explainatory or I forgot to pu
 ### Is There something left to do?
 
 The VSCode backup tool doesn't care for anything but packages at the moment. It's not a problem for me right now, but ideally it should allow to backup and quickly set up themes, keybinds and snippets too. Actually this whole section of the script is probably useless given the native github syncronization of VSCode. 
+
+More importantly I should create a script to edit battery charge tresholds, which should ask for user imput so that it can be used to reset tresholds to default values. This apparently needs to edit the register and I'm too lazy to do it right now.
