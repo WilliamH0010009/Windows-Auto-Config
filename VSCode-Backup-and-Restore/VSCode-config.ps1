@@ -6,9 +6,9 @@ function Check-Command($cmdname){
 
 #Ci aspettiamo che git e VSCode siano installati
 #----------------------------------------------------------------------------------------------------------------------------------------------------------
-#scarica la repo di Latex per dnd
-Write-Host "I'm downloading the DnD Template for LaTeX from github"
-git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\MiKTeX\tex\latex\dnd
+#scarica la repo di Latex per dnd (deprecated)
+#Write-Host "I'm downloading the DnD Template for LaTeX from github"
+#git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\MiKTeX\tex\latex\dnd
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------
 #Voglio recuperare il backup da github --Dove lo salvo? idealmente nella directory dove poi andrei a sincronizzare con git per avere

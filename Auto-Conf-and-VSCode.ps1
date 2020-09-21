@@ -162,8 +162,12 @@ foreach ( $name in $NonAuto) {
 
 #------------------------------------------- DnD5e Template Download ------------------------------------------
 #
-Write-Host "I'm downloading the DnD Template for LaTeX from github"
-git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\MiKTeX\tex\latex\dnd
+
+
+
+
+
+
 
 #---------------------------------- Importing this Repo to access old backups ---------------------------------
 

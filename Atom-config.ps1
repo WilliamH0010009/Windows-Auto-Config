@@ -49,9 +49,9 @@ foreach ($voice in $AtomExtensions) {
 }
 
 
-#scarica la repo di Latex per dnd
-Write-Host "I'm downloading the DnD Template for LaTeX from github"
-git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\MiKTeX\tex\latex\dnd
+#scarica la repo di Latex per dnd (deprecated)
+#Write-Host "I'm downloading the DnD Template for LaTeX from github"
+#git clone https://github.com/rpgtex/DND-5e-LaTeX-Template C:\ProgramData\MiKTeX\tex\latex\dnd
 
 
 Read-Host -Prompt "Setup is done (hopefully), press a key to exit"
